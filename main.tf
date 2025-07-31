@@ -11,10 +11,12 @@ terraform {
 
 provider "azurerm" {
   features {}
+  subscription_id = "712bfb2b-0ea5-4e2e-ae12-b849c506ebe4"
+
 }
 
-resource "azurerm_resource_group" "rg" {
-  name     = var.rg_name
-  location = var.rg_location
+resource "azurerm_resource_group" "lky" {
+  name     = "lky-rg"
+  location = "East US"
 }
 
